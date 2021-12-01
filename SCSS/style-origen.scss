@@ -1,0 +1,129 @@
+*{margin: 0%;padding: 0%;}
+
+//Variables
+$gris: rgb(182, 182, 182);
+$blanco:rgb(255, 255, 255);;
+$negro:black;
+$azul:rgb(15, 15, 255);
+$mobile:767px;
+$ancho:90%;
+$margen:5%;
+
+/*Contenido index*/
+
+.contenido{
+    text-align: center;
+}
+
+.caja{
+    width: $ancho;
+    height: 50vh;
+    margin: $margen;
+
+    @media only screen and (min-width:$mobile){
+        width: $ancho / 2 ;
+        display: inline-block;
+        margin: ($margen / 2) - 0.5 ;
+    }
+}
+
+/* Formulario / BEM/ */
+.form-contact{
+    background-color:$gris;
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid $negro;
+}
+
+.form-contact__label{
+    margin-left: 1rem;
+    padding: 5px;
+}
+
+.form-contact__input{
+    width: auto;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.form-contact__select{
+    margin-top: 0.5em;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.form-contact__query{
+    margin-bottom: 2em;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.btn{
+    border: 1px solid $negro;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+} 
+
+.btn--dark{
+    @extend .btn;
+    background-color:$negro;
+    color: $blanco;
+    position: absolute;
+    right: 5rem;    
+}
+
+.btn--blue{
+    @extend .btn;
+    background-color: $azul;
+    color: $blanco;
+    margin-left: 1rem;
+}
+
+/*Logo*/
+
+.logo{
+    width: 210px;
+}
+
+.logo:hover{
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    transform: rotate(-0.02turn);
+}
+/*Sección principal*/
+.div-1{
+    background-image: url(../imagenes/fondo.jpg);
+    background-color: transparent;
+    height: 50vh;
+}
+.titulo-seccion{
+    font-family: 'Lovelo';
+}
+
+/*Productos*/
+.producto{
+    width: $ancho - 10;
+}
+
+/*Blog*/
+
+video{
+    width: 320px;
+    height: 240px;
+}
+
+/*footer*/
+footer{
+    h3{
+        font-family: 'Lovelo';
+    }
+}
+
+/*Tipografía fuente*/
+@font-face {
+    font-family:Lovelo;
+    src: url(../imagenes/Lovelo\Black.otf);
+}

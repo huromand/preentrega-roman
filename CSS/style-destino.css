@@ -1,0 +1,99 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%; }
+
+/*Contenido index*/
+.contenido {
+  text-align: center; }
+
+.caja {
+  width: 90%;
+  height: 50vh;
+  margin: 5%; }
+  @media only screen and (min-width: 767px) {
+    .caja {
+      width: 45%;
+      display: inline-block;
+      margin: 2%; } }
+
+/* Formulario / BEM/ */
+.form-contact {
+  background-color: #b6b6b6;
+  display: grid;
+  grid-template-columns: auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black; }
+
+.form-contact__label {
+  margin-left: 1rem;
+  padding: 5px; }
+
+.form-contact__input {
+  width: auto;
+  margin-right: 1rem;
+  margin-left: 1rem; }
+
+.form-contact__select {
+  margin-top: 0.5em;
+  margin-right: 1rem;
+  margin-left: 1rem; }
+
+.form-contact__query {
+  margin-bottom: 2em;
+  margin-right: 1rem;
+  margin-left: 1rem; }
+
+.btn, .btn--dark, .btn--blue {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px; }
+
+.btn--dark {
+  background-color: black;
+  color: white;
+  position: absolute;
+  right: 5rem; }
+
+.btn--blue {
+  background-color: #0f0fff;
+  color: white;
+  margin-left: 1rem; }
+
+/*Logo*/
+.logo {
+  width: 210px; }
+
+.logo:hover {
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+  transform: rotate(-0.02turn); }
+
+/*Sección principal*/
+.div-1 {
+  background-image: url(../imagenes/fondo.jpg);
+  background-color: transparent;
+  height: 50vh; }
+
+.titulo-seccion {
+  font-family: 'Lovelo'; }
+
+/*Productos*/
+.producto {
+  width: 80%; }
+
+/*Blog*/
+video {
+  width: 320px;
+  height: 240px; }
+
+/*footer*/
+footer h3 {
+  font-family: 'Lovelo'; }
+
+/*Tipografía fuente*/
+@font-face {
+  font-family: Lovelo;
+  src: url(../imagenes/Lovelo\Black.otf); }
